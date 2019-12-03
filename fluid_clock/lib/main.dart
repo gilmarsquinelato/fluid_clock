@@ -1,0 +1,27 @@
+import 'dart:io';
+
+import 'package:flutter_clock_helper/customizer.dart';
+import 'package:flutter_clock_helper/model.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/intl_standalone.dart';
+
+import 'fluid_clock.dart';
+import 'i18n/i18n.dart';
+
+void main() async {
+  // A temporary measure until Platform supports web and TargetPlatform supports
+  // macOS.
+  if (!kIsWeb && Platform.isMacOS) {
+    // TODO(gspencergoog): Update this when TargetPlatform includes macOS.
+    // https://github.com/flutter/flutter/issues/31366
+    // See https://github.com/flutter/flutter/wiki/Desktop-shells#target-platform-override.
+    debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
+  }
+
+  await loadLocales();
+  Intl.defaultLocale = await findSystemLocale();
+
+  runApp(ClockCustomizer((ClockModel model) => FluidClock(model)));
+}

@@ -1,0 +1,19 @@
+{
+  "@@last_modified": "2019-11-24T12:39:24.979263",
+  "@@locale": "en",
+  "currentTime": "Current time",
+  "currentDate": "Current date",
+  "dayOfWeek": "Day of week",
+  "weatherCondition": "Weather condition",
+  "currentTemperature": "Current temperature",
+  "maximumTemperature": "Maximum temperature",
+  "minimumTemperature": "Minimum temperature",
+  "cloudy": "Cloudy",
+  "foggy": "Foggy",
+  "rainy": "Rainy",
+  "snowy": "Snowy",
+  "sunny": "Sunny",
+  "thunderstorm": "Thunderstorm",
+  "windy": "Windy",
+  "location": "Location"
+}

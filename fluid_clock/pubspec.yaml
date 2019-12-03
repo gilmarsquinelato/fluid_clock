@@ -1,0 +1,43 @@
+name: fluid_clock
+description: Fluid clock face
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  flutter_localizations:
+    sdk: flutter
+
+  intl: ^0.16.0
+  intl_translation: ^0.17.7
+
+  flutter_clock_helper:
+    path: ../flutter_clock_helper
+
+  tinycolor: ^1.0.2
+  flare_flutter: ^1.7.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  intl: ^0.16.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/weather-cloudy.flr
+    - assets/weather-foggy.flr
+    - assets/weather-rainy.flr
+    - assets/weather-snowy.flr
+    - assets/weather-sunny.flr
+    - assets/weather-thunderstorm.flr
+    - assets/weather-windy.flr
